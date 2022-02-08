@@ -9,8 +9,9 @@ node {
 
     stage('Build image') {
   
-        sh 'echo "Test Build"'
-       app = docker.build("prasadnj89/my-dockerimage/Dockerfile")
+       sh 'echo "Test Build"'
+       app = docker.build("prasadnj89/test")
+       //app = docker.build("prasadnj89/my-dockerimage/Dockerfile")
     }
 
     stage('Test image') {
